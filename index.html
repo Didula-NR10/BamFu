@@ -3,9 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="BamFu - Sustainable Bamboo Solutions with a Panda Heart">
-    <meta name="keywords" content="bamboo, sustainable, eco-friendly, panda, environmental">
-    <meta name="author" content="BamFu Company">
+    <meta name="description" content="BamFu - Sustainable Bamboo Solutions">
     <title>BamFu - Sustainable Bamboo Solutions 🐼</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -17,168 +15,94 @@
                 <span class="panda-logo">🐼</span>
                 <span class="brand-name">BamFu</span>
             </div>
-            <div class="nav-links">
-                <a href="#hero" class="nav-link">Home</a>
-                <a href="#features" class="nav-link">Features</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#contact" class="nav-link">Contact</a>
-                <button class="contact-btn">Contact Us</button>
-            </div>
+            <button class="contact-btn">Contact Us</button>
         </div>
     </nav>
 
     <!-- ========== HERO SECTION ========== -->
-    <section id="hero" class="hero">
-        <div class="time-display">
-            <div class="time" id="time">9:41 AM</div>
-            <div class="date" id="date">Jun 5, 2023</div>
-        </div>
+    <section class="hero">
+        <div class="hero-container">
+            <!-- Left side - Empty space -->
+            <div class="hero-left"></div>
 
-        <div class="hero-content">
-            <!-- Panda Character -->
-            <div class="panda-character">
-                <div class="panda-head">
-                    <div class="panda-ear left"></div>
-                    <div class="panda-ear right"></div>
-                    <div class="panda-eye left"></div>
-                    <div class="panda-eye right"></div>
-                    <div class="panda-nose"></div>
-                    <div class="panda-mouth"></div>
-                </div>
-                <div class="panda-body">
-                    <div class="panda-arm left"></div>
-                    <div class="panda-arm right"></div>
-                </div>
-            </div>
+            <!-- Right side - Image with text overlay -->
+            <div class="hero-right">
+                <div class="hero-image-wrapper">
+                    <div class="hero-image">
+                        <svg class="panda-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Panda Body -->
+                            <circle cx="100" cy="130" r="50" fill="#ffffff"/>
+                            
+                            <!-- Panda Head -->
+                            <circle cx="100" cy="70" r="45" fill="#ffffff"/>
+                            
+                            <!-- Left Eye Patch -->
+                            <ellipse cx="80" cy="55" rx="18" ry="25" fill="#000000"/>
+                            
+                            <!-- Right Eye Patch -->
+                            <ellipse cx="120" cy="55" rx="18" ry="25" fill="#000000"/>
+                            
+                            <!-- Left Eye -->
+                            <circle cx="80" cy="55" r="8" fill="#ffffff"/>
+                            <circle cx="82" cy="53" r="4" fill="#000000"/>
+                            
+                            <!-- Right Eye -->
+                            <circle cx="120" cy="55" r="8" fill="#ffffff"/>
+                            <circle cx="122" cy="53" r="4" fill="#000000"/>
+                            
+                            <!-- Nose -->
+                            <circle cx="100" cy="75" r="6" fill="#000000"/>
+                            
+                            <!-- Mouth -->
+                            <path d="M 100 75 Q 95 85 90 82" stroke="#000000" stroke-width="2" fill="none" stroke-linecap="round"/>
+                            <path d="M 100 75 Q 105 85 110 82" stroke="#000000" stroke-width="2" fill="none" stroke-linecap="round"/>
+                            
+                            <!-- Left Ear -->
+                            <circle cx="70" cy="35" r="12" fill="#000000"/>
+                            
+                            <!-- Right Ear -->
+                            <circle cx="130" cy="35" r="12" fill="#000000"/>
+                            
+                            <!-- Left Arm -->
+                            <ellipse cx="65" cy="115" rx="12" ry="35" fill="#000000"/>
+                            
+                            <!-- Right Arm -->
+                            <ellipse cx="135" cy="115" rx="12" ry="35" fill="#000000"/>
+                            
+                            <!-- Left Leg -->
+                            <ellipse cx="75" cy="165" rx="15" ry="20" fill="#000000"/>
+                            
+                            <!-- Right Leg -->
+                            <ellipse cx="125" cy="165" rx="15" ry="20" fill="#000000"/>
+                            
+                            <!-- Bamboo stalks in background -->
+                            <line x1="40" y1="20" x2="40" y2="80" stroke="#52b788" stroke-width="3"/>
+                            <ellipse cx="38" cy="30" rx="3" ry="5" fill="#52b788"/>
+                            <ellipse cx="42" cy="45" rx="3" ry="5" fill="#52b788"/>
+                            
+                            <line x1="160" y1="40" x2="160" y2="100" stroke="#2d6a4f" stroke-width="4"/>
+                            <ellipse cx="158" cy="50" rx="3" ry="6" fill="#2d6a4f"/>
+                            <ellipse cx="162" cy="70" rx="3" ry="6" fill="#2d6a4f"/>
+                        </svg>
+                    </div>
 
-            <!-- Main Title -->
-            <div class="text-container">
-                <div class="main-title">
-                    <span class="title-letter">B</span><span class="title-letter">a</span><span class="title-letter">m</span><span class="title-letter">F</span><span class="title-letter">u</span>
+                    <!-- BamFu Text Overlay with Image Cutout -->
+                    <div class="hero-text-overlay">
+                        <div class="bamfu-text">
+                            <span class="text-letter" style="background-image: url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 40 60%22><text x=%2220%22 y=%2245%22 font-size=%2250%22 fill=%22%23000%22>B</text></svg>')">B</span><span class="text-letter">a</span><span class="text-letter">m</span><span class="text-letter">F</span><span class="text-letter">u</span>
+                        </div>
+                    </div>
                 </div>
-                <p class="tagline">Sustainable Bamboo Solutions with a Panda Heart</p>
-            </div>
-        </div>
 
-        <!-- Scroll Indicator -->
-        <div class="scroll-indicator">
-            <span>Scroll to explore</span>
-            <div class="mouse">
-                <div class="wheel"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========== FEATURES SECTION ========== -->
-    <section id="features" class="features">
-        <h2>Why Choose BamFu?</h2>
-        <div class="features-grid">
-            <div class="feature-card">
-                <div class="feature-icon">🌱</div>
-                <h3>100% Sustainable</h3>
-                <p>All our bamboo products are grown without harmful chemicals and harvested responsibly to protect the environment and panda habitats.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">🐼</div>
-                <h3>Panda Friendly</h3>
-                <p>For every product sold, we donate 5% of profits to panda conservation efforts and bamboo forest protection programs worldwide.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">♻️</div>
-                <h3>100% Recyclable</h3>
-                <p>Our biodegradable packaging ensures zero waste. Every component returns to nature without leaving a trace of harm.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">🌍</div>
-                <h3>Global Impact</h3>
-                <p>Join thousands of eco-conscious customers reducing their carbon footprint with high-quality bamboo alternatives.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">💚</div>
-                <h3>Premium Quality</h3>
-                <p>Crafted with precision and care, each product undergoes rigorous testing to ensure durability and excellence.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">🚀</div>
-                <h3>Fast Shipping</h3>
-                <p>Eco-friendly packaging shipped fast to your door. Carbon-neutral delivery options available worldwide.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========== ABOUT SECTION ========== -->
-    <section id="about" class="about">
-        <div class="about-content">
-            <h2>About BamFu</h2>
-            <p>
-                BamFu was founded with a simple mission: to create sustainable bamboo products while protecting panda habitats and promoting environmental conservation. 
-                We believe that business and nature can thrive together. Every product is a promise to our planet and a tribute to the magnificent pandas 
-                that inspire our commitment to sustainability.
-            </p>
-
-            <div class="stats">
-                <div class="stat">
-                    <div class="stat-number">50000</div>
-                    <div class="stat-label">Happy Customers</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-number">1000</div>
-                    <div class="stat-label">Pandas Protected</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-number">500</div>
-                    <div class="stat-label">Hectares Preserved</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-number">99</div>
-                    <div class="stat-label">% Eco-Friendly</div>
+                <!-- Time Display -->
+                <div class="time-display">
+                    <div class="time" id="time">9:41 AM</div>
+                    <div class="date" id="date">Jun 5, 2023</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ========== CONTACT SECTION ========== -->
-    <section id="contact" class="contact">
-        <h2>Get In Touch</h2>
-        <form class="contact-form" id="contactForm">
-            <input 
-                type="text" 
-                name="name" 
-                placeholder="Your Name" 
-                required
-                aria-label="Your Name"
-            >
-            <input 
-                type="email" 
-                name="email" 
-                placeholder="Your Email" 
-                required
-                aria-label="Your Email"
-            >
-            <input 
-                type="text" 
-                name="subject" 
-                placeholder="Subject" 
-                required
-                aria-label="Message Subject"
-            >
-            <textarea 
-                name="message" 
-                placeholder="Your Message" 
-                rows="5" 
-                required
-                aria-label="Your Message"
-            ></textarea>
-            <button type="submit" class="submit-btn">Send Message</button>
-        </form>
-    </section>
-
-    <!-- ========== FOOTER ========== -->
-    <footer class="footer">
-        <p>&copy; 2024 BamFu - Sustainable Bamboo Solutions 🐼 | All rights reserved | Built with 💚 for the Earth</p>
-    </footer>
-
-    <!-- Scripts -->
     <script src="script.js"></script>
 </body>
 </html>
